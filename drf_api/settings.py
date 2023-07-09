@@ -57,9 +57,9 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'djangorestframework-darko.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'djangorestframework-darko-070f41296928.herokuapp.com']
 
 
 # Application definition
