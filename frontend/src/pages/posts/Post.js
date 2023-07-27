@@ -67,7 +67,7 @@ const Post = (props) => {
 
     const handleUnike = async () => {
         try {
-            const {data} = await axiosRes.delete('/likes', {post:id})
+            await axiosRes.delete('/likes', {post:id})
             setPosts((prevPosts) => ({
               ...prevPosts,
               results: prevPosts.results.map((post) => {
